@@ -1,12 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1d1d1d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(139, 139, 139);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 0, 0);
+}
 
 * {
   background-color: #25252a;
   color: #fff;
-  font-family: "Roboto mono", monospace;
+  font-family: "Source Sans Pro", sans-serif;
 }
 .header-div {
   display: flex;
+  font-size: 4vw;
   justify-content: center;
 }
 .button {
@@ -16,7 +33,7 @@
   font-size: 2vw;
   background: none;
   cursor: pointer;
-  background: rgb(194, 219, 83);
+  background: rgb(233, 82, 82);
   box-shadow: inset 0 0 0 0;
   transition: all 0.3s ease-out 0ms;
   border-radius: 10px;
@@ -24,10 +41,36 @@
   color: #000;
 }
 button:hover {
+  transform: scale(1.1);
   color: #fff;
-  box-shadow: rgb(233, 82, 82) inset 10vw 0 0 0;
+  box-shadow: rgb(194, 219, 83) inset 10vw 0 0 0;
 }
 .button-div {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  float: right;
+}
+.tasks-div {
+  display: flex;
+  margin-left: 100px;
+  font-size: 2vw;
+}
+.task-div {
+  cursor: pointer;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: rgb(233, 82, 82);
+  padding: 5px;
+}
+.task-div h3 {
+  border-style: solid;
+  border-radius: 10px;
+  border-color: rgb(233, 82, 82);
+  padding: 5px;
+  background: rgb(95, 95, 95);
+  transition: all 0.3s ease-in-out 0ms;
+}
+.task-div h3:hover {
+  border-color: rgb(194, 219, 83);
+  transform: scale(1.1);
 }
